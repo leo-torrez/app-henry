@@ -22,10 +22,19 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./src/", "./src/assets/scss/bootstrap"]
+            },
             "styles": [
-              "src/styles.css"
+              "node_modules/open-iconic/font/css/open-iconic.min.css",
+              "node_modules/open-iconic/font/css/open-iconic-bootstrap.css",
+
+              "src/style.scss"
             ],
-            "scripts": []
+
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,5 +132,10 @@
       }
     }
   },
-  "defaultProject": "agendaHenry"
+  "defaultProject": "agendaHenry",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

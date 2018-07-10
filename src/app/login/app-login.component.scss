@@ -1,0 +1,44 @@
+@import "_config.scss";
+
+$background-color:#2979F9;
+
+.bg-panel-signin{
+  background: $white;
+  box-shadow: -5px 2px 21px -4px rgba(0,0,0,0.75);
+}
+.form-group{
+  position: relative;
+}
+
+.form-group.has-icon i{
+  font-size: 14px;
+    position: absolute;
+    top: 25px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 20px;
+}
+.form-group.has-icon input{
+  padding-left: 70px;
+}
+
+.height-full{
+      min-height: 100vh;
+}
+.form-group.has-icon i:after {
+    content: "";
+    height: 30px;
+    width: 1px;
+    border-right: solid 1px #e1e8ee;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.container-background-login{
+  background: url('../../assets/images/bita.jpg');
+  background-size: cover;
+}
